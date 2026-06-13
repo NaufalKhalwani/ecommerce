@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/modules/pages/OnBoarding/OnBoarding.dart';
 import 'package:get/get.dart';
-import 'package:frontend/pages/OnBoarding/OnBoarding.dart';
 
 void main() {
   runApp(const MyApp());

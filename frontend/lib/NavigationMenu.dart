@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/pages/Home/home.dart';
+import 'package:frontend/modules/pages/Home/home.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -13,15 +13,8 @@ class NavigationMenu extends StatelessWidget {
     return Obx(() {
       return Scaffold(
         extendBody: true,
-
-        // =========================
-        // BODY
-        // =========================
         body: controller.screens[controller.selectedIndex.value],
 
-        // =========================
-        // FLOATING BUTTON
-        // =========================
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.green,
           onPressed: () {
@@ -31,9 +24,6 @@ class NavigationMenu extends StatelessWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
-        // =========================
-        // BOTTOM NAV
-        // =========================
         bottomNavigationBar: BottomAppBar(
           shape: const CircularNotchedRectangle(),
           notchMargin: 10,
@@ -55,9 +45,6 @@ class NavigationMenu extends StatelessWidget {
     });
   }
 
-  // =========================
-  // ITEM NAV (NO OBX HERE!)
-  // =========================
   Widget _item(IconData icon, String label, int index) {
     final isActive = controller.selectedIndex.value == index;
 

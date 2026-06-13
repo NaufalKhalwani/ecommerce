@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../NavigationMenu.dart';
+import 'package:frontend/NavigationMenu.dart';
 import 'package:get/get.dart';
 
 class OnboardingScreen extends StatefulWidget {
